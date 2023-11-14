@@ -1,0 +1,6 @@
+test
+x: 1, y: 10
+result: 11
+test
+x: 1, y: 15
+result: 16

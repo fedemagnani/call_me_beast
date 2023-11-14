@@ -1,0 +1,6 @@
+https://github.com/moarshy/lilypadtest/blob/0db4df522bb5e29083a68fa322496c4177ebf11a/lilypad_module.json.tmpl#L26
+https://github.com/bacalhau-project/lilypad-module-cowsay/blob/ddbeedfe59a87c901e994836638030a4da040dbd/lilypad_module.json.tmpl#L16
+https://github.com/bacalhau-project/lilypad-module-wasm/blob/b7154046cf3d0f36507c5d245547563f9d4c1ba1/lilypad_module.json.tmpl#L4
+https://github.com/bacalhau-project/lilypad-module-filecoin-data-prep/blob/398575e1c24faee5d3df0e81e1330a54f3b23687/lilypad_module.json.tmpl#L23
+
+https://github.com/bacalhau-project/lilypad-module-mistral-7b-instruct/blob/d3ccd9ff7b3d2016fbcedc526c7f3b4050b1365b/lilypad_module.json.tmpl
