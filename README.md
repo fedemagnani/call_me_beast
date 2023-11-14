@@ -29,12 +29,17 @@ sudo docker login
 ```
 sudo docker tag call_me_beast drunnn/call_me_beast:1.0.0
 ```
-Now we are ready to push the image to dockerhub
+- Now we are ready to push the image to dockerhub
 ```
 sudo docker push drunnn/call_me_beast:1.0.0
 ```
-In order to recover the sha256 digest of the pushed image, one can run (notice that we are replacing `sha256:` with `0x`)
+- In order to recover the sha256 digest of the pushed image, one can run (notice that we are replacing `sha256:` with `0x`)
 `docker pull <docker-hub-user>/<tag_name>:1.0.0 | grep "Digest: sha256:" | sed 's/.*sha256:/0x/'` i.e.
 ```
 sudo docker pull drunnn/call_me_beast:1.0.0 | grep "Digest: sha256:" | sed 's/.*sha256:/0x/'
+```
+- Now we need to create the `lilypad_module.json.tmpl` file (check example file). Make sure it is called in this way
+- Once that we have pushed our repo, you need to create a tag for the code on github. We are calling it `v1`
+```
+lilypad run github.com/fedemagnani/call_me_beast:v1 -i X="5" Y="6"
 ```
