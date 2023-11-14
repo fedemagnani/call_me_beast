@@ -39,7 +39,9 @@ sudo docker push drunnn/call_me_beast:1.0.0
 sudo docker pull drunnn/call_me_beast:1.0.0 | grep "Digest: sha256:" | sed 's/.*sha256:/0x/'
 ```
 - Now we need to create the `lilypad_module.json.tmpl` file (check example file). Make sure it is called in this way
-- Once that we have pushed our repo, you need to create a tag for the code on github. We are calling it `v1`
+- Once that we have pushed our repo, you need to create a tag for the code on github. We are calling it `v1.2`. NOw we are ready to run our job task. Notice that `--module-hash` refers to the commit hash of the update
 ```
-lilypad run github.com/fedemagnani/call_me_beast:v1 -i X="5" Y="6"
+lilypad run github.com/fedemagnani/call_me_beast:v1.2 -i X=5 -i Y=3 --module-repo https://github.com/fedemagnani/call_me_beast --module-hash 5e477712394cb29cebf68aa2ac1b8b63f9e9cf01 --module-path ./lilypad_module.json.tmpl
 ```
+
+If you want more verbose logs, tyoe `export LOG_LEVEL=debug`
